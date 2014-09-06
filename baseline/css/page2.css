@@ -1,0 +1,128 @@
+body{
+  background-image: url("../img/page2bg.jpg");
+  background-repeat: no-repeat;
+}
+
+.clearfix{
+  clear: both;
+}
+.headpic{
+  width: 100%;
+  box-shadow: 0px 34px 41px blue;
+}
+nav{
+  width: 100%;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.hidden_nav{
+  position: fixed;
+  top: 0px;
+  right: 456px;
+  display: none;
+  z-index: 999999999999999;
+}
+
+li{
+  display: inline-block;
+  font-size: 25px;
+  margin: 20px;
+}
+
+a{
+  text-decoration: none;
+  color: orange;
+}
+
+p{
+  font-size: 18px;
+}
+
+.link{
+  top: -14px;
+  position: relative;
+}
+
+a:hover{
+  border-bottom: 3px  solid #4d4dff ;
+  border-top: 3px  solid #4d4dff ;
+  transition: all .5s linear;
+  -o-transition: all .5s linear;
+  -moz-transition: all .5s linear;
+  -webkit-transition: all .5s linear;
+}
+
+
+.content{
+  width: 90%;
+  height: 400px;
+  margin-left: 50px;
+  margin-bottom: 30px;
+  overflow: hidden;
+}
+
+
+
+.content_title{
+  text-align: center;
+  color: orange;
+  border-bottom: solid #4d4dff 5px;
+  font-size: 25px;
+  width: 40%;
+
+}
+
+.content_text{
+  color: #8a8a8a;
+   width: 40%;
+   height: 400px;
+   float: left;
+   overflow-y: auto;
+}
+
+.products_title{
+  text-align: center;
+  color: orange;
+  border-bottom: solid #4d4dff 5px;
+  font-size: 25px;
+}
+
+.products{
+  outline: red solid 1px;
+  width: 50%;
+  height: 400px;
+  float: left;
+  margin-left: 20px;
+}
+
+.productsP{
+  color: orange;
+  text-align: center;
+  font-size: 25px;
+}
+
+footer{
+  width: 100%;
+  height: 150px;
+  float: left;
+}
+
+.footer_div{
+  display: inline;
+  width: 30%;
+  height: 73%;
+  float: left;
+  margin: 15px;
+  color: orange;
+}
+
+.footer_p{
+  text-align: center;
+  color: orange;
+}
+
+.footerdiv_1{
+  text-align: center;
+  margin-top: 35px;
+}
