@@ -9,7 +9,7 @@
 <body>
 <header>
   <img class="headpic" src="img/headerpic.png" />
-  <nav>
+  <nav class="nav_shown">
     <ul>
       <li><a class="link" href="#" >item 1</a></li>
       <li><a class="link" href="#" >item 2</a></li>
@@ -74,6 +74,14 @@ $(document).scroll(function () {
         $('.hidden_nav').fadeIn();
     } else {
         $('.hidden_nav').fadeOut();
+    }
+});
+$(document).scroll(function () {
+    var headerShow = $(this).scrollTop();
+    if (headerShow > 300) {
+        $('.nav_shown').hide();
+    } else {
+        $('.nav_shown').show();
     }
 });
 </script>
