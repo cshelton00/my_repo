@@ -1,6 +1,10 @@
-body{
+html{
   background-image: url("../img/page2bg.jpg");
   background-repeat: no-repeat;
+   -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 .clearfix{
@@ -19,9 +23,32 @@ nav{
 .hidden_nav{
   position: fixed;
   top: 0px;
-  right: 456px;
+  right: 258px;
   display: none;
+  background-color: black;
+  border: 1px solid black;
+  border-radius: 25px;
+  line-height: 2px;
+  width: 50%;
+
   z-index: 999999999999999;
+}
+.burger_nav{
+  position: fixed;
+  top: 98px;
+  right: 343px;
+  display: none;
+  background-color: black;
+  border: 1px solid black;
+  border-radius: 25px;
+  line-height: 2px;
+  width: 35%;
+
+  z-index: 999999999999999;
+}
+
+.hidden_ul{
+  margin-left: 68px;
 }
 
 li{
@@ -44,7 +71,11 @@ p{
   position: relative;
 }
 
-a:hover{
+.link_burger{
+  font-size: 12px;
+}
+
+a.link:hover{
   border-bottom: 3px  solid #4d4dff ;
   border-top: 3px  solid #4d4dff ;
   transition: all .5s linear;
@@ -52,17 +83,39 @@ a:hover{
   -moz-transition: all .5s linear;
   -webkit-transition: all .5s linear;
 }
+a.link_hidden:hover{
+  border-bottom: 3px solid #4d4dff;
+  transition: all .5s linear;
+  -o-transition: all .5s linear;
+  -moz-transition: all .5s linear;
+  -webkit-transition: all .5s linear;
+}
+a.footer_link:hover{
+    border-bottom: 3px  solid #4d4dff ;
+  border-top: 3px  solid #4d4dff ;
+  transition: all .5s linear;
+  -o-transition: all .5s linear;
+  -moz-transition: all .5s linear;
+  -webkit-transition: all .5s linear;
+}
 
+#hamburger{
+  color: red;
+  position: absolute;
+}
 
 .content{
   width: 90%;
-  height: 400px;
+  height: auto;
   margin-left: 50px;
   margin-bottom: 30px;
   overflow: hidden;
 }
 
-
+.more_content{
+  width: 90%;
+  height: 650px;
+}
 
 .content_title{
   text-align: center;
@@ -102,9 +155,19 @@ a:hover{
   font-size: 25px;
 }
 
+.stuff{
+  width:19%;
+  height: 175px;
+  outline: 1px red solid;
+  display: inline-block;
+  margin-left: 5%;
+  margin-top: 40px;
+}
+
 footer{
+  border-top: 2px solid grey;
   width: 100%;
-  height: 150px;
+  height: auto;
   float: left;
 }
 
@@ -126,3 +189,17 @@ footer{
   text-align: center;
   margin-top: 35px;
 }
+
+
+.footer_img_clear{
+  clear:both;
+  display: inline;
+  width: 30%;
+  height: 73%;
+  float: left;
+  margin: 15px;
+}
+
+
+
+
