@@ -9,7 +9,6 @@
     function update() {
         if ($(window).width() < 1024 && !currentlySmall) {
             currentlySmall = true;
-            console.log('Less than 1024');
 
             $('.nav_shown').hide();
             $('div.footerdiv_2').hide();
@@ -19,7 +18,6 @@
         }
         else if ($(window).width() >= 1024 && currentlySmall) {
             currentlySmall = false;
-            console.log('More than 1024');
 
             $(".nav_shown").show();
             $('.footerdiv_2').show();
@@ -28,9 +26,6 @@
         }
     }
 
-    //Calling this in the else part above will bind a new scroll event each time
-    //Instead, if this should only happen when the screen is large, use the
-    //flag you created
     $(document).scroll(function () {
         if (!currentlySmall) {
             var headerShow = $(this).scrollTop();
@@ -45,5 +40,5 @@
     });
 
     $(window).resize(update);
-    update(); //Force initial calculation since resize won't be called when page loads
+    update();
 });
