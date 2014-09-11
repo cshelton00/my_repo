@@ -1,16 +1,34 @@
 nav{
-  outline: 1px red solid;
+  position: relative;
   height: 150px;
   margin-top: 25px;
 }
 
-li.link{
+a{
+  text-decoration: none;
+  font-size:  20px;
+  color: grey;
+  line-height: 35px;
+}
+
+li{
   display: inline-block;
+}
+
+li.nav_item{
+  position: relative;
+  border-left: 1px solid grey;
+  border-right: 1px solid grey;
+  border-radius: 20px;
+  top: -62px;
+  margin-left: 60px;
+}
+.nav_hide{
+  display: none;
 }
 
 .content{
   outline: green 1px solid;
-  margin-top: 25px;
   height: 350px;
 }
 
@@ -18,27 +36,44 @@ li.link{
   display: inline-block;
   height: 200px;
   margin-top: 25px;
-  outline: 1px solid blue;
 }
 
 .img_box{
   height: 200px;
   margin-top: 25px;
   margin-left: 25px;
-  outline: orange 1px solid;
+}
+
+.txt_box_title{
+  border-bottom: 1px solid grey;
 }
 
 .txt_box{
   height: 200px;
   margin-top: 25px;
-  outline: yellow 1px solid;
+  overflow: hidden;
+  overflow: scroll;
+}
+
+.block_overlay{
+  position: absolute;
+  height: 125px;
+  background-color: #000;
+  width: 100%;
+  bottom: 3px;
+  opacity: .5;
+  display: none;
 }
 
 footer{
   height: 150px;
-  width: 100%;
   margin-top: 25px;
   outline: 1px pink solid;
+}
+
+.footer_img{
+  border: 1px solid transparent;
+  border-radius: 50%;
 }
 
 
