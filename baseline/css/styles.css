@@ -164,7 +164,7 @@ ul.login{
   display: none;
 }
 
-.login.open .form_li{
+.login .open .form_li{
 display: block !important;
 width:164px;
 }

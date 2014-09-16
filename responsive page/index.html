@@ -7,7 +7,7 @@
 
 
 	<meta charset="utf-8">
-	<title>Your Page Title Here :)</title>
+		<title>index</title>
 	<meta name="description" content="">
 	<meta name="author" content="">
 
@@ -28,12 +28,30 @@
 <div class="container">
 	<header>
 		<nav >
-		  <ul class="sixteen columns">
+		<div class="arrow_down"></div>
+		  <ul class=" sixteen columns">
 		  	<li class="link"> <img src="images/logo.png"> </li>
-			<li class="link nav_item"> <a class="links" href="#">link 1</a>  </li>
+			<li class="link nav_item"> <a class="links" href="#">link 1</a>
+				<ul>
+		                <li ><a href='#'>item </a></li>
+		                <li><a href='#'>item </a></li>
+		                <li><a href='#'>item </a></li>
+	              	</ul>
+              	</li>
 			<li class="link nav_item"> <a class="links" href="#">link 2</a> </li>
 			<li class="link nav_item"> <a class="links" href="#">link 3</a> </li>
 			<li class="link nav_item"> <a class="links" href="#">link 4</a> </li>
+			<li class="link nav_item"> <a class="links toggle" href="#">login</a>
+				<ul class="login">
+		                 <li class="form_li"><form class="login_form" method="#" action="#">
+		                      <input type="text" name="username" placeholder="user name" />
+		                      <input type="password" name="password" placeholder="password" />
+		                      <input class="btn xlogin" type="button" name="login" value="login" />
+		                      <input class="btn btn_last" type="button" name="reset"  value="forgot username/password" />
+		                      <button type="button" class="btn sign_up"> sign up</button> </form>
+                      		</li>
+	              	</ul>
+			</li>
 		  </ul>
 		  	<div class="hamburger_btn">
 		  		<i id="hamburger" class="fa fa-bars "> </i>
@@ -47,17 +65,18 @@
 			<li class="burger_link"> <a class="links" href="#">link 2</a> </li>
 			<li class="burger_link"> <a class="links" href="#">link 3</a> </li>
 			<li class="burger_link"> <a class="links" href="#">link 4</a> </li>
+			<li class="burger_link"> <a class="links" href="#">login</a> </li>
 		  </ul>
 		</div>
 
 			<!--slider-->
 	<div class=" sixteen columns">
-	<ul class="bxslider">
-      <li><img src="images/slider_img1.png" /></li>
-      <li><img src="images/slider_img2.png" /></li>
-      <li><img src="images/slider_img3.png" /></li>
-      <li><img src="images/slider_img4.png" /></li>
-    </ul>
+	     <ul class="bxslider">
+		      <li><img src="images/slider_img1.png" /></li>
+		      <li><img src="images/slider_img2.png" /></li>
+		      <li><img src="images/slider_img3.png" /></li>
+		      <li><img src="images/slider_img4.png" /></li>
+	    </ul>
 	</div>
 			<!--blocks-->
 	<div class="block one-third column ">
@@ -89,17 +108,17 @@
 	</div>
 
 	<div class="txt_box eight columns">
-	  <div>
 	  <h1 class="txt_box_title" >section title</h1>
-	  </div>
 		<div>
 			   <p> Lorem ipsum dolor sit amet, est assum dolore possit in. Mollis regione mediocritatem id qui. At quidam delectus vis, id mel vide dicit o mnesque. Verear neglegentur ut cum, eum noluisse gloriatur eu. Quo ad modo tollit assueverit, summo soluta atomorum id usu. Eu has tollit vocibus .Lorem ipsum dolor sit amet, est assum dolore possit in. Mollis regione mediocritatem id qui. At quidam delectus vis, id mel vide dicit omnesque. Verear neglegentur ut cum, eum noluisse gloriatur eu. Quo ad modo tollit assueverit, summo soluta atomorum id usu. Eu has tollit vocibus . Lorem ipsum dolor sit amet, est assum dolore possit in. Mollis regione mediocritatem id qui. At quidam delectus vis, id mel vide dicit omnesque. Verear neglegentur ut cum, eum noluisse gloriatur eu. Quo ad modo tollit assueverit, summo soluta atomorum id usu. Eu has tollit vocibus .
 			   </p>
 		</div>
 	</div>
+	<div class="txt_box_overlay eight columns"></div>
+	<!--end container-->
+</div>
 
-	<!--footer area-->
-	<footer  class="sixteen columns">
+	<footer>
 		<ul class="footer_ul">
 		      <li><img class="footer_img" src="images/facebook.png" /></li>
 		      <li><img class="footer_img" src="images/twitter.png" /></li>
@@ -108,14 +127,11 @@
 	    </ul>
 	    					<div class="clear"></div>
 	    <div class="footer_p">
-	    <p>created by:Chris Shelton</p>
+	    	<p>created by:Chris Shelton</p>
 	    </div>
 
 	</footer>
 
-
-<!--end container-->
-</div>
 <script type = "text/javascript">
 //auto slide
   $('.bxslider').bxSlider({
