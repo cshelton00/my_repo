@@ -13,3 +13,14 @@ $('#hamburger').click(function(){
 $(".toggle").click(function() {
   $('.arrow_down').toggleClass("arrow_up");
 });
+
+  $(".xlogin").click(function(){
+    $(".login_link").hide();
+    $(".arrow_up").hide();
+    $(".logout").show();
+  });
+
+  $(".logout").click(function(){
+    $(".logout").hide();
+    $(".login_link").show();
+  });

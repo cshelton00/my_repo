@@ -2,7 +2,7 @@
   clear: both;
 }
 
-/*custom media query hides links on mobile*/
+/*mobile media query's go here*/
 @media screen and (max-width: 600px) {
   .nav_item {display: none!important; }
   div.hamburger_btn {visibility: visible;  }
@@ -14,28 +14,52 @@
   .block_overlay{visibility: hidden !important;}
 
 }
+header{
+  position: relative;
+}
 
 nav{
-  position: relative;
+  position: fixed;
   height: 150px;
-  margin-top: 25px;
+  z-index: 99999999;
+  background-color: black;
+
 }
+/*form stuff*/
 input{
   outline: none;
+  width: 100%;
 }
+input[type=text]{
+  width: 154px;
+}
+input[type=password]{
+  width: 154px;
+}
+
 button{
   outline: none;
+  width: 100%;
 }
+
+.login{
+background-color: red;
+opacity: .5;
+}
+.logout{
+display: none;
+}
+/*end form stuff*/
 .arrow_down {
   width: 0px;
   height: 0px;
   border-left: 10px solid transparent;
   border-right: 10px solid transparent;
-  border-top: 10px solid black;
+  border-top: 10px solid white;
   z-index: 1;
   position: relative;
-  right: -871px;
-  top:85px;
+  right: -893px;
+  top:66px;
   margin-top: 10px;
   float: left;
   }
@@ -45,11 +69,11 @@ button{
   height: 0px;
   border-left: 10px solid transparent;
   border-right: 10px solid transparent;
-  border-bottom: 10px solid black;
+  border-bottom: 10px solid white;
   z-index: 1;
   position: relative;
-  right: -871px;
-  top:85px;
+  right: -893px;
+  top:66px;
   margin-top: 10px;
   float: left;
   border-top: none;
@@ -83,15 +107,20 @@ a{
   line-height: 35px;
 }
 
+a:hover{
+color: red;
+
+}
+
 .link{
   display: inline-block;
+    border-left: 1px solid grey;
+    border-right: 1px solid grey;
+    border-radius: 40%;
 }
 
 li.nav_item{
   position: relative;
-  border-left: 1px solid grey;
-  border-right: 1px solid grey;
-  border-radius: 20px;
   top: -62px;
   margin-left: 60px;
 }
@@ -117,6 +146,14 @@ li.nav_item{
 .login{
   left: -78px;
   margin-top: 10px;
+  position: absolute;;
+}
+
+#logout{
+  display: none;
+  position: relative;
+  top: -108px;
+  left: 796px;
 }
 
  .open{
@@ -151,14 +188,14 @@ li.nav_item{
 }
 
 .txt_box_overlay{
-background-color: red;
+background-color: blueviolet;
 opacity: .3;
 position: relative;
 bottom: 195px;
 right: -420px;
 height: 200px;
 z-index: -1;
-box-shadow: 0px 10px 10px 20px;
+box-shadow: lime  0px 10px 10px 20px;
 }
 
 .block_overlay{
