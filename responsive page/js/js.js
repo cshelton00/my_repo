@@ -2,10 +2,6 @@
 $(this).children('.block_overlay').slideToggle(175);
 });
 
-$('#hamburger').click(function(){
-        $('.burger_nav').slideToggle(0);
-});
-
   $('.toggle ').click(function() {
       $('.login').toggleClass('open');
     });
@@ -23,4 +19,6 @@ $(".toggle").click(function() {
   $(".logout").click(function(){
     $(".logout").hide();
     $(".login_link").show();
+    $(".arrow_down").show();
+
   });

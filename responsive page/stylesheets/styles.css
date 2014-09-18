@@ -2,16 +2,23 @@
   clear: both;
 }
 
+body{
+  background-image: url("../images/bodybg.png");
+}
+
 /*mobile media query's go here*/
 @media screen and (max-width: 600px) {
   .nav_item {display: none!important; }
-  div.hamburger_btn {visibility: visible;  }
-  .burger_nav {visibility: visible!important; }
+  /*div.hamburger_btn {visibility: visible;  }       for nav will change as i get it working
+  .burger_nav {visibility: visible! important; }*/
   footer{margin-top: 50px !important;}
   .footer_ul {margin-left: 29% !important; }
   .footer_p {margin-left: 29% !important; }
   .txt_box_overlay{display: none !important;}
   .block_overlay{visibility: hidden !important;}
+  nav{ position: relative !important;}
+.bx-wrapper{margin-top: 0 !important;}
+nav{background-color:transparent !important;}
 
 }
 header{
@@ -78,27 +85,6 @@ display: none;
   float: left;
   border-top: none;
   }
-
-.hamburger_btn{
-  visibility: hidden;
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-
-.burger_nav{
-  visibility: hidden;
-  position: absolute;
-}
-
-.burger_ul{
-  position: absolute;
-  top: -135px;
-  width: 60px;
-  background-color: black;
-  border-radius: 8%;
-  z-index: 99999999999999;
-}
 
 a{
   text-decoration: none;
@@ -169,6 +155,7 @@ li.nav_item{
 
 .block{
   margin-top: 25px;
+  height: 200px;
 }
 
 .img_box{
@@ -185,6 +172,7 @@ li.nav_item{
   margin-top: 25px;
   overflow: hidden;
   overflow: scroll;
+  color: white;
 }
 
 .txt_box_overlay{
@@ -227,6 +215,3 @@ footer{
 .footer_p{
   margin-left: 44%
 }
-
-
-
