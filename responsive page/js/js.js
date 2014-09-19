@@ -22,3 +22,18 @@ $(".toggle").click(function() {
     $(".arrow_down").show();
 
   });
+
+
+    $('#mobile-menu-icon').click(function() {
+      var $mobile_nav = $('#mobile-nav');
+      var $content = $('#content');
+
+      if ( !$mobile_nav.hasClass('show') ) {
+        $mobile_nav.removeClass('hide').addClass('show');
+      } else {
+        $mobile_nav.removeClass('show').addClass('hide');
+      }
+
+      $content.toggleClass('translate');
+
+    });

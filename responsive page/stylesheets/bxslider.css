@@ -13,6 +13,10 @@
 
 /** RESET AND LAYOUT
 ===================================*/
+@media screen and (max-width: 600px) {
+  .bx-wrapper {margin-left: 12px !important;}
+}
+
 
 .bx-wrapper {
 	position: relative;
@@ -21,6 +25,7 @@
 	*zoom: 1;
 	outline: none;
 	margin-top: 225px;
+	margin-left: 25px;
 }
 
 .bx-wrapper img {

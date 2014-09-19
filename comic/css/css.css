@@ -16,7 +16,7 @@ nav{
 .wire{
   position: absolute;
 }
-.bottom_wire{
+.long_wire{
   position: absolute;
 }
 .circle{
@@ -28,7 +28,7 @@ nav{
   border-color: gold;
   border: 5px solid gold;
 }
-.bottom_wire1{
+.long_wire{
    background-color: gold;
   border-color: gold;
   border-bottom: 5px solid gold;

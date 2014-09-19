@@ -6,32 +6,100 @@ body{
   background-image: url("../images/bodybg.png");
 }
 
-/*mobile media query's go here*/
-@media screen and (max-width: 600px) {
-  .nav_item {display: none!important; }
-  /*div.hamburger_btn {visibility: visible;  }       for nav will change as i get it working
-  .burger_nav {visibility: visible! important; }*/
-  footer{margin-top: 50px !important;}
-  .footer_ul {margin-left: 29% !important; }
-  .footer_p {margin-left: 29% !important; }
-  .txt_box_overlay{display: none !important;}
-  .block_overlay{visibility: hidden !important;}
-  nav{ position: relative !important;}
-.bx-wrapper{margin-top: 0 !important;}
-nav{background-color:transparent !important;}
 
-}
+
 header{
   position: relative;
 }
 
 nav{
-  position: fixed;
+  position: absolute;
   height: 150px;
   z-index: 99999999;
   background-color: black;
-
 }
+
+
+#content {
+  -webkit-transform: translate(0, 0);
+  -moz-transform: translate(0, 0);
+  -ms-transform: translate(0, 0);
+  -o-transform: translate(0, 0);
+  transform: translate(0, 0);
+  transition: all 0.4s ease-in-out;
+}
+
+#content.translate {
+  -webkit-transform: translate(200px, 0);
+  -moz-transform: translate(200px, 0);
+  -ms-transform: translate(200px, 0);
+  -o-transform: translate(200px, 0);
+  transform: translate(200px, 0);
+}
+
+
+/*mobile nav*/
+
+#mobile-menu-icon {
+  position: absolute;
+z-index: 9999999999;
+display: none;
+}
+#mobile-menu-icon:hover {
+  cursor: pointer;
+}
+
+#mobile-menu-icon i {
+  color: #fff;
+}
+
+#mobile-nav {
+  width: 200px;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: -200px;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  z-index: -1;
+  background-color: #222;
+  opacity: 0;
+  transition: left 0.3s ease-in-out;
+}
+#mobile-nav.show {
+  z-index: 200;
+  opacity: 1;
+  left: 0;
+}
+#mobile-nav.hide {
+  left: -200px;
+  transition: all 0.4s ease-in-out;
+}
+
+#mobile-nav ul {
+  margin: 0;
+  margin-top: -10px;
+  padding: 0;
+  height: 100%;
+  list-style-type: none;
+}
+
+#mobile-nav ul li {
+  margin: 10px 0;
+}
+
+#mobile-nav ul li a {
+  display: block;
+  padding: 15px 10px 15px 45px;
+  font-size: 18px;
+  color: #fff;
+  text-decoration: none;
+}
+#mobile-nav ul li a:hover {
+  background-color: #a0a0a0;
+}
+/*end mobile nav*/
+
 /*form stuff*/
 input{
   outline: none;
@@ -65,8 +133,8 @@ display: none;
   border-top: 10px solid white;
   z-index: 1;
   position: relative;
-  right: -893px;
-  top:66px;
+  right: -877px;
+  top:87px;
   margin-top: 10px;
   float: left;
   }
@@ -79,8 +147,8 @@ display: none;
   border-bottom: 10px solid white;
   z-index: 1;
   position: relative;
-  right: -893px;
-  top:66px;
+  right: -877px;
+  top:87px;
   margin-top: 10px;
   float: left;
   border-top: none;
@@ -214,4 +282,23 @@ footer{
 
 .footer_p{
   margin-left: 44%
+}
+
+
+
+
+/*mobile media query's go here*/
+@media screen and (max-width: 600px) {
+  .nav_item {display: none!important; }
+  #mobile-menu-icon{display: block!important}
+  footer{margin-top: 50px !important;}
+  .footer_ul {margin-left: 29% !important; }
+  .footer_p {margin-left: 29% !important; }
+  .txt_box_overlay{display: none !important;}
+  .block_overlay{visibility: hidden !important;}
+  nav{ position: relative !important;}
+.bx-wrapper{margin-top: 8px !important;}
+nav{background-color:transparent !important;}
+
+
 }
