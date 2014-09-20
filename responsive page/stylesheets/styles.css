@@ -15,10 +15,14 @@ header{
 nav{
   position: absolute;
   height: 150px;
+  width: 100%;
   z-index: 99999999;
   background-color: black;
 }
 
+#desktop_nav{
+  position: absolute;
+}
 
 #content {
   -webkit-transform: translate(0, 0);
@@ -133,8 +137,8 @@ display: none;
   border-top: 10px solid white;
   z-index: 1;
   position: relative;
-  right: -877px;
-  top:87px;
+  right: -896px;
+  top:70px;
   margin-top: 10px;
   float: left;
   }
@@ -147,8 +151,8 @@ display: none;
   border-bottom: 10px solid white;
   z-index: 1;
   position: relative;
-  right: -877px;
-  top:87px;
+  right: -896px;
+  top:70px;
   margin-top: 10px;
   float: left;
   border-top: none;
@@ -259,7 +263,7 @@ box-shadow: lime  0px 10px 10px 20px;
   height: 125px;
   background-color: #000;
   width: 31.4%;
-  bottom: 431px;
+  bottom: 425px;
   opacity: .5;
   display: none;
 }
@@ -297,6 +301,7 @@ footer{
   .txt_box_overlay{display: none !important;}
   .block_overlay{visibility: hidden !important;}
   nav{ position: relative !important;}
+  #desktop_nav{position: relative!important;}
 .bx-wrapper{margin-top: 8px !important;}
 nav{background-color:transparent !important;}
 
