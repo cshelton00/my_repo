@@ -9,16 +9,17 @@
 	<meta name="author" content="">
 
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-
+<!-- css -->
 	<link rel="stylesheet" href="stylesheets/base.css">
 	<link rel="stylesheet" href="stylesheets/skeleton.css">
 	<link rel="stylesheet" href="stylesheets/layout.css">
 	<link rel="stylesheet" href="stylesheets/bxslider.css">
 	<link rel="stylesheet" href="stylesheets/styles.css">
+	<!-- fonts -->
+	<link href='http://fonts.googleapis.com/css?family=Oswald|Raleway+Dots|Indie+Flower|Shadows+Into+Light' rel='stylesheet' type='text/css'>
+<!-- js -->
 	<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-	<script src="js/bxslider.js"></script>
-
 </head>
 <body>
 
@@ -39,7 +40,7 @@
 		<nav >
 		<div class="arrow_down"></div>
 		  <ul  id="desktop_nav" class=" sixteen columns">
-		  	<li class="link"> <img src="images/logo.png"> </li>
+		  	<li id="logo" class="link"> <img src="images/logo.png"> </li>
 			<li class="link nav_item"> <a class="links" href="#">link 1</a>
 				<ul>
 		                <li ><a href='#'>item </a></li>
@@ -133,9 +134,9 @@
 	    </div>
 
 	</footer>
-
+	<!-- scripts -->
+<script src="js/bxslider.js"></script>
 <script type = "text/javascript">
-//auto slide
   $('.bxslider').bxSlider({
   auto: true,
   autoControls: true
