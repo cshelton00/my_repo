@@ -9,6 +9,10 @@ $(this).children('.block_overlay').slideToggle(175);
       $('.login').toggleClass('open');
     });
 
+  $('.toggle ').click(function() {
+      $('.mobile_login').toggleClass('open');
+    });
+
 $(".toggle").click(function() {
   $('.arrow_down').toggleClass("arrow_up");
 });

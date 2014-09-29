@@ -101,6 +101,11 @@ nav{
   background-color: blueviolet;
 }
 /*end mobile nav*/
+/*mobile login*/
+ .mobile_login{
+  display: none;
+ }
+/*end mobile login*/
 
 /*form stuff*/
 input{
@@ -202,6 +207,7 @@ li.nav_item{
 }
 
 /*end dropdown*/
+
 .login{
   left: -78px;
   margin-top: 10px;
