@@ -271,9 +271,10 @@ box-shadow: blue  0px 20px 100px 20px;
     font-family: 'Oswald', sans-serif;
 }
 
+
 footer{
-  height: 135px;
-  margin-top: -53px;
+  height: 155px;
+  margin-top: -100px;
   background-color: black;
 }
 h2{
@@ -297,6 +298,13 @@ h3{
   border-radius: 50%;
 }
 
+#name{
+  color: grey;
+  font-family: 'Indie Flower', cursive;
+  position: absolute;
+
+}
+
 
 
 
@@ -306,26 +314,48 @@ h3{
 .footer_ul li{margin-right: 20px !important;}
 }
 
-@media screen and (max-width: 770px) {
-.nav_item {display: none !important; }
-nav{background-color: transparent !important;}
-#mobile-menu-icon{display: block!important}
-.footer_ul li{display: none;}
-
+@media screen and (max-width: 956px) {
+.tablet_block_hide{display: none!important;}
+.tablet_block_margin{margin-left: 154px!important;}
+.block_overlay{height: 144px; bottom:425px; width: 39.1%;}
+.tablet_block_hide{display: none !important;}
 }
 
+
+
+
+/*stupidly sized smart phones size here*/
+@media screen and (max-width: 767px) {
+   .nav_item {display: none!important; }
+   nav{background-color: transparent!important;}
+   #logo{margin-top: 20px!important; margin-left: 33px!important;}
+   .one-third{margin-left: 53px!important; margin-bottom: 20px!important;}
+  .img_box{margin-left: 53px!important;margin-bottom: 20px!important;}
+  footer{height: 175px!important; margin-top: -150px!important;}
+  .tablet_block_hide{display: block!important;}
+  #mobile-menu-icon{display: block!important}
+  .footer_ul li{display: none!important;}
+  .block_overlay{display: none!important;}
+}
+
+@media screen and (max-width: 479px) {
+    #logo{margin-left: 10px!important; margin-top: 20px!important;}
+    .one-third{ margin-left: 10px!important}
+    .img_box{margin-left: 10px!important;}
+    .bx-wrapper{margin-left: 27px!important;}
+    .block_overlay{display: none!important;}
+  }
+
 /*mobile media query's go here*/
-@media screen and (max-width: 600px) {
-  .nav_item {display: none!important; }
+@media screen and (max-width: 400px) {
+  #logo{margin-left: 0px!important;}
+  .one-third{margin-left: 0px!important;}
+  .img_box{margin-left: 0px!important;}
   #mobile-menu-icon{display: block!important}
   footer{margin-top: 50px !important;}
   .footer_ul{display: none !important;}
   .txt_box_overlay{display: none !important;}
-  .block_overlay{visibility: hidden !important;}
-  nav{ position: relative !important;}
+  nav{ position: relative !important; background-color:transparent !important;}
   #desktop_nav{position: relative!important;}
-.bx-wrapper{margin-top: 8px !important;}
-nav{background-color:transparent !important;}
-
-
+  .bx-wrapper{margin-top: 8px !important; margin-left: 0px!important;}
 }
