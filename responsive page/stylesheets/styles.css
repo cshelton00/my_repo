@@ -131,6 +131,9 @@ button{
 .logout{
 display: none;
 }
+.open{
+  visibility: visible;
+}
 /*end form stuff*/
 .arrow_down {
   width: 0px;
@@ -206,11 +209,13 @@ li.nav_item{
 /*end dropdown*/
 
 .login{
-  left: -78px;
+  left: -80px;
   margin-top: 10px;
   position: absolute;
   background-color: black;
-opacity: .5;
+  opacity: .5;
+  width: 165px;
+  height: 240px;
 }
 
 #logout{
