@@ -133,6 +133,7 @@ display: none;
 }
 .open{
   visibility: visible;
+  display: block;
 }
 /*end form stuff*/
 .arrow_down {
@@ -377,4 +378,6 @@ h3{
   nav{ position: relative !important; background-color:transparent !important;}
   #desktop_nav{position: relative!important;}
   .bx-wrapper{margin-top: 8px !important; margin-left: 0px!important;}
+  input[type=text]{width: 100%}
+  input[type=password]{width: 100%}
 }
