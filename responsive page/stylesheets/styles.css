@@ -100,12 +100,11 @@ nav{
 #mobile-nav ul li a:hover {
   background-color: blueviolet;
 }
-/*end mobile nav*/
-/*mobile login*/
  .mobile_login{
   display: none;
  }
-/*end mobile login*/
+/*end mobile nav*/
+
 
 /*form stuff*/
 input{
@@ -254,6 +253,7 @@ h1{
   overflow: scroll;
   color: white;
   font-family: 'Oswald', sans-serif;
+  padding: 9px;
 }
 
 .txt_box_overlay{
@@ -291,7 +291,7 @@ font-family: 'Oswald', sans-serif;
 
 .overlay_txt.hover {
   opacity: 1;
-  transition: .7s ease-in;
+  transition: .5s ease-in;
 }
 
 
@@ -334,6 +334,7 @@ h3{
 .nav_item {margin-left: 25px !important; }
 .footer_ul li{margin-right: 20px !important;}
 .block_overlay{width: 300px!important}
+#mobile_nav{display: none!important;}
 }
 
 @media screen and (max-width: 956px) {
@@ -356,6 +357,8 @@ h3{
   #mobile-menu-icon{display: block!important}
   .footer_ul li{display: none!important;}
   .block_overlay{display: none!important;}
+   input[type=text]{width: 100%}
+   input[type=password]{width: 100%}
 }
 
 @media screen and (max-width: 479px) {
@@ -378,6 +381,4 @@ h3{
   nav{ position: relative !important; background-color:transparent !important;}
   #desktop_nav{position: relative!important;}
   .bx-wrapper{margin-top: 8px !important; margin-left: 0px!important;}
-  input[type=text]{width: 100%}
-  input[type=password]{width: 100%}
 }

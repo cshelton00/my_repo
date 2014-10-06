@@ -11,7 +11,6 @@ $('.block').each(function() {
   });
 });
 
-
   $('.toggle ').click(function() {
       $('.login').toggleClass('open');
         $('.mobile_login').toggleClass('open');
