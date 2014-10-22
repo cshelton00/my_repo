@@ -102,7 +102,6 @@ nav{
 }
  .mobile_login{
   display: none;
-
  }
 /*end mobile nav*/
 
@@ -175,7 +174,6 @@ a{
 
 a:hover{
 color: blueviolet;
-
 }
 
 .link{
@@ -218,7 +216,6 @@ li.nav_item{
   opacity: .5;
   width: 165px;
   height: 240px;
-
 }
 
 #logout{
