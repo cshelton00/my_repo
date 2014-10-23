@@ -335,6 +335,7 @@ h3{
 .footer_ul li{margin-right: 20px !important;}
 .block_overlay{width: 300px!important}
 #mobile_nav{display: none!important;}
+.txt_box{width: 340px!important};
 }
 
 @media screen and (max-width: 956px) {
