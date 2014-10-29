@@ -381,5 +381,5 @@ h3{
   .txt_box_overlay{display: none !important;}
   nav{ position: relative !important; background-color:transparent !important;}
   #desktop_nav{position: relative!important;}
-  .bx-wrapper{margin-top: 8px !important; margin-left: 0px!important;}
+  .bx-wrapper{margin-top: 8px !important; margin-left: 0px!important; left: 0px!important;}
 }

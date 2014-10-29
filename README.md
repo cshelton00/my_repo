@@ -1,4 +1,4 @@
-responsive page project has only been tested in google chrome after I get it all built im going to start fixing it for other browers will be awhile as im terrified to see how it looks in IE
+responsive page project has only been tested in Google chrome after I get it all built I'm going to start fixing it for other browsers will be awhile due to other projects I have
 
 i do not know PHP that file was made with help from a LAMP developer for me to learn when I get to that point
 
